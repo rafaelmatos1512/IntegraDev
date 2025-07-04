@@ -99,11 +99,16 @@ IntegraDev.IA is a modern full-stack web application showcasing AI and developme
 
 ```
 Changelog:
-- July 04, 2025. Initial setup
+- July 04, 2025: Initial setup
+- July 04, 2025: Enhanced design with attractive images and streamlined content
+  - Homepage: Added visual cards with relevant tech images, removed mission section
+  - Products page: Simplified with visual headers, reduced content length
+  - Overall: More compact sections, better visual hierarchy
 ```
 
 ## User Preferences
 
 ```
 Preferred communication style: Simple, everyday language.
+Design preferences: Attractive visuals, compact content, not overwhelming for clients.
 ```
