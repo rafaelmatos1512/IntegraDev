@@ -22,6 +22,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/sobre-nos", label: "Sobre Nós" },
     { href: "/produtos", label: "Produtos" },
+    { href: "/blog", label: "Blog" },
   ];
 
   const isActive = (href: string) => {
