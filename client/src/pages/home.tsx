@@ -4,25 +4,47 @@ import AnimatedSection from "../components/animated-section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Brain, ServerCog, TrendingUp, Users, CheckCircle, Target } from "lucide-react";
+import Logo from "@/components/logo";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection
-        title="Transforme seu negócio com"
-        subtitle="Inteligência Artificial"
-        description="Desenvolvemos agentes de IA personalizados e sistemas integrados que revolucionam o atendimento ao cliente e otimizam processos empresariais"
-        primaryAction={{
-          label: "Conhecer Produtos",
-          href: "/produtos"
-        }}
-        secondaryAction={{
-          label: "Sobre Nós",
-          href: "/sobre-nos"
-        }}
-        backgroundImage="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
-      />
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center mb-8"
+          >
+            <Logo size={120} showText={false} />
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              Transforme seu negócio com
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent block">
+                Inteligência Artificial
+              </span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+              Desenvolvemos agentes de IA personalizados e sistemas integrados que revolucionam o atendimento ao cliente e otimizam processos empresariais
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/produtos">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+                  Conhecer Produtos
+                </Button>
+              </Link>
+              <Link href="/sobre-nos">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg">
+                  Sobre Nós
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </div>
 
       {/* Company Highlights */}
       <AnimatedSection className="py-16 bg-white">

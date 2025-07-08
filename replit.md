@@ -104,6 +104,12 @@ Changelog:
   - Homepage: Added visual cards with relevant tech images, removed mission section
   - Products page: Simplified with visual headers, reduced content length
   - Overall: More compact sections, better visual hierarchy
+- July 08, 2025: Logo integration and readability improvements
+  - Created SVG logo component based on user-provided design
+  - Replaced hero sections with clean gradient backgrounds (no text over images)
+  - Updated navbar and footer to use new logo
+  - Improved text readability with better contrast and backgrounds
+  - Updated footer location to Niterói, RJ - Brasil
 ```
 
 ## User Preferences

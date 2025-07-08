@@ -3,6 +3,7 @@ import HeroSection from "../components/hero-section";
 import AnimatedSection from "../components/animated-section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import Logo from "@/components/logo";
 import { 
   Bot, 
   Filter, 
@@ -27,13 +28,29 @@ export default function Products() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection
-        title="Nossos"
-        subtitle="Produtos"
-        description="Soluções completas em IA e desenvolvimento de sistemas para impulsionar seu negócio"
-        backgroundImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
-        className="min-h-[70vh]"
-      />
+      <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center"
+          >
+            <Logo size={80} showText={false} />
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Nossos
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent block">
+                Produtos
+              </span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Soluções completas em IA e desenvolvimento de sistemas para impulsionar seu negócio
+            </p>
+          </motion.div>
+        </div>
+      </div>
 
       {/* AI Agents Section */}
       <AnimatedSection className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">

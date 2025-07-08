@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/logo";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -37,9 +38,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="text-2xl font-bold text-gradient">
-                IntegraDev.IA
-              </span>
+              <Logo size={35} />
             </Link>
           </div>
 

@@ -1,4 +1,5 @@
 import { Mail, Instagram, MapPin } from "lucide-react";
+import Logo from "@/components/logo";
 
 export default function Footer() {
   return (
@@ -6,8 +7,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="text-2xl font-bold text-gradient mb-4">
-              IntegraDev.IA
+            <div className="mb-4">
+              <Logo size={30} showText={false} />
+              <div className="text-2xl font-bold text-gradient">
+                IntegraDev.IA
+              </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Transformando negócios através da inteligência artificial e desenvolvimento de sistemas personalizados.
