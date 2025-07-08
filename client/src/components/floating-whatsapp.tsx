@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function FloatingWhatsApp() {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá! Como podemos te ajudar hoje? 👋");
-    const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+    const whatsappUrl = `https://wa.me/552138282956?text=${Gostaria de saber dos produtos da IntegraDev.IA}`;
     window.open(whatsappUrl, "_blank");
   };
 
