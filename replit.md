@@ -118,6 +118,14 @@ Changelog:
   - Maintained IntegraDev.IA as main brand with IntegraPsis as specialized division
   - Updated product card with teal color scheme matching IntegraPsis identity
   - Corrected: IntegraPsis is for psychology clinics, IntegraCorretora is for insurance brokers
+- July 08, 2025: Enhanced technological design and user experience
+  - Added animated tech background elements with pulsing dots
+  - Enhanced hero sections with glowing logo effects and gradient animations
+  - Improved button styling with hover effects and scale transformations
+  - Added technology-focused visual cards with gradient backgrounds
+  - Enhanced product cards with better visual hierarchy and tech aesthetics
+  - Added metrics dashboard with real performance numbers
+  - Improved "Sobre Nós" button visibility on homepage dashboard
 ```
 
 ## User Preferences

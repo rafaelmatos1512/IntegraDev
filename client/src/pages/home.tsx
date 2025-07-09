@@ -10,8 +10,18 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
+        
+        {/* Animated tech background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+          <div className="absolute top-20 right-20 w-1 h-1 bg-purple-400 rounded-full animate-ping"></div>
+          <div className="absolute bottom-20 left-20 w-1 h-1 bg-teal-400 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+          <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-purple-400 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-teal-400 rounded-full animate-ping"></div>
+        </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -20,10 +30,13 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center mb-8"
           >
-            <Logo size={120} showText={false} />
+            <div className="relative mb-8">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-lg opacity-20 animate-pulse"></div>
+              <Logo size={120} showText={false} />
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Transforme seu negócio com
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent block">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent block">
                 Inteligência Artificial
               </span>
             </h1>
@@ -32,12 +45,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/produtos">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg shadow-xl transform hover:scale-105 transition-all duration-300 border border-blue-500/20">
                   Conhecer Produtos
                 </Button>
               </Link>
               <Link href="/sobre-nos">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
                   Sobre Nós
                 </Button>
               </Link>
@@ -90,16 +103,17 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
                 <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className={`absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br ${item.gradient} rounded-lg flex items-center justify-center`}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-90`} />
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white opacity-20 text-8xl">
+                      {item.icon}
+                    </div>
+                  </div>
+                  <div className={`absolute bottom-4 left-4 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center shadow-lg border border-white/30`}>
                     {item.icon}
                   </div>
                 </div>
@@ -127,23 +141,40 @@ export default function Home() {
               </p>
               <div className="space-y-4">
                 {[
-                  { label: "Inovação constante em IA", color: "bg-blue-600" },
-                  { label: "Atendimento personalizado", color: "bg-purple-600" },
-                  { label: "Resultados comprovados", color: "bg-emerald-600" }
+                  { label: "Inovação constante em IA", color: "bg-blue-600", icon: "🤖" },
+                  { label: "Atendimento personalizado", color: "bg-purple-600", icon: "💬" },
+                  { label: "Resultados comprovados", color: "bg-emerald-600", icon: "📈" }
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className={`w-3 h-3 ${item.color} rounded-full mr-4`}></div>
+                  <div key={index} className="flex items-center p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+                    <div className={`w-10 h-10 ${item.color} rounded-full mr-4 flex items-center justify-center text-white font-bold`}>
+                      {item.icon}
+                    </div>
                     <span className="text-gray-700 font-medium">{item.label}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Advanced AI technology" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 shadow-2xl">
+                <div className="grid grid-cols-3 gap-4 text-white">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">24/7</div>
+                    <div className="text-sm opacity-80">Atendimento</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">+75%</div>
+                    <div className="text-sm opacity-80">Conversão</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">-60%</div>
+                    <div className="text-sm opacity-80">Tempo Admin</div>
+                  </div>
+                </div>
+                <div className="mt-6 text-center text-white">
+                  <div className="text-lg font-semibold">Resultados Comprovados</div>
+                  <div className="text-sm opacity-80">Métricas reais de nossos clientes</div>
+                </div>
+              </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>

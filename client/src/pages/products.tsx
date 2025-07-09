@@ -29,8 +29,16 @@ export default function Products() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
+        
+        {/* Animated tech background */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+          <div className="absolute top-20 right-20 w-1 h-1 bg-purple-400 rounded-full animate-ping"></div>
+          <div className="absolute bottom-20 left-20 w-1 h-1 bg-teal-400 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+        </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -39,10 +47,13 @@ export default function Products() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center"
           >
-            <Logo size={80} showText={false} />
+            <div className="relative mb-8">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-lg opacity-20 animate-pulse"></div>
+              <Logo size={80} showText={false} />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Nossos
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent block">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent block">
                 Produtos
               </span>
             </h1>
@@ -57,7 +68,7 @@ export default function Products() {
       <AnimatedSection className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full mb-4">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-4 border border-blue-200">
               <Bot className="text-blue-600 mr-2" size={20} />
               <span className="text-blue-800 font-medium">Agentes IA</span>
             </div>
@@ -123,7 +134,7 @@ export default function Products() {
       <AnimatedSection className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full mb-4">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-full mb-4 border border-emerald-200">
               <Code className="text-emerald-600 mr-2" size={20} />
               <span className="text-emerald-800 font-medium">Desenvolvimento de Sistemas</span>
             </div>
@@ -186,14 +197,14 @@ export default function Products() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative h-48 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center overflow-hidden">
+              <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
                 <img 
                   src="/attached_assets/capa integrapsi_1752085521224.PNG" 
                   alt="IntegraPsis" 
-                  className="w-full h-full object-contain bg-white"
+                  className="h-16 w-auto object-contain"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-teal-600 text-sm font-medium">Clínicas</span>
+                <div className="absolute top-4 left-4 bg-teal-500 rounded-lg px-3 py-1">
+                  <span className="text-white text-sm font-medium">Clínicas</span>
                 </div>
               </div>
               <div className="p-6">
