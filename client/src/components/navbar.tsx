@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: "/sobre-nos", label: "Sobre Nós" },
     { href: "/produtos", label: "Produtos" },
     { href: "/blog", label: "Blog" },
+    { href: "https://integrapsis.com.br/", label: "Site Principal", external: true },
   ];
 
   const isActive = (href: string) => {
@@ -46,18 +47,29 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
+              item.external ? (
                 <Button
+                  key={item.href}
                   variant="ghost"
-                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                    isActive(item.href)
-                      ? "bg-blue-50 text-blue-600 hover:bg-blue-100"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                  }`}
+                  className="px-4 py-2 rounded-lg font-medium transition-all duration-200 text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => window.open(item.href, '_blank')}
                 >
                   {item.label}
                 </Button>
-              </Link>
+              ) : (
+                <Link key={item.href} href={item.href}>
+                  <Button
+                    variant="ghost"
+                    className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                      isActive(item.href)
+                        ? "bg-blue-50 text-blue-600 hover:bg-blue-100"
+                        : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                    }`}
+                  >
+                    {item.label}
+                  </Button>
+                </Link>
+              )
             ))}
           </div>
 
@@ -79,19 +91,33 @@ export default function Navbar() {
           <div className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-md">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href}>
+                item.external ? (
                   <Button
+                    key={item.href}
                     variant="ghost"
-                    className={`w-full justify-start px-3 py-2 rounded-lg font-medium transition-all duration-200 ${
-                      isActive(item.href)
-                        ? "bg-blue-50 text-blue-600"
-                        : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                    }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="w-full justify-start px-3 py-2 rounded-lg font-medium transition-all duration-200 text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                    onClick={() => {
+                      window.open(item.href, '_blank');
+                      setIsMobileMenuOpen(false);
+                    }}
                   >
                     {item.label}
                   </Button>
-                </Link>
+                ) : (
+                  <Link key={item.href} href={item.href}>
+                    <Button
+                      variant="ghost"
+                      className={`w-full justify-start px-3 py-2 rounded-lg font-medium transition-all duration-200 ${
+                        isActive(item.href)
+                          ? "bg-blue-50 text-blue-600"
+                          : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                      }`}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Button>
+                  </Link>
+                )
               ))}
             </div>
           </div>
