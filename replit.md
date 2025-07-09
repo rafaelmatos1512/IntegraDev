@@ -1,8 +1,8 @@
-# IntegraPsis - Full Stack Web Application
+# IntegraDev.IA - Full Stack Web Application
 
 ## Overview
 
-IntegraPsis is a modern full-stack web application showcasing AI and development solutions. The application features a React frontend built with Vite, TypeScript, and Tailwind CSS, backed by an Express.js server with PostgreSQL database integration using Drizzle ORM.
+IntegraDev.IA is a modern full-stack web application showcasing AI and development solutions. The application features a React frontend built with Vite, TypeScript, and Tailwind CSS, backed by an Express.js server with PostgreSQL database integration using Drizzle ORM.
 
 ## System Architecture
 
@@ -110,13 +110,12 @@ Changelog:
   - Updated navbar and footer to use new logo
   - Improved text readability with better contrast and backgrounds
   - Updated footer location to Niterói, RJ - Brasil
-- July 08, 2025: Complete rebranding to IntegraPsis
-  - Updated all branding from IntegraDev.IA to IntegraPsis
-  - Created new teal-colored logo inspired by provided IntegraPsis design
-  - Updated contact information and social media handles
-  - Added link to main IntegraPsis website (https://integrapsis.com.br/)
-  - Updated navbar with external link to main website
-  - Updated HTML title and meta descriptions
+- July 08, 2025: IntegraPsis integration for corretoras
+  - Created separate IntegraPsis logo component for broker insurance systems
+  - Added IntegraPsis branding specifically to corretora section in products page
+  - Integrated link to https://integrapsis.com.br/ in IntegraPsis product card
+  - Maintained IntegraDev.IA as main brand with IntegraPsis as specialized division
+  - Updated product card with teal color scheme matching IntegraPsis identity
 ```
 
 ## User Preferences

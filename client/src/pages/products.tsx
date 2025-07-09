@@ -4,6 +4,7 @@ import AnimatedSection from "../components/animated-section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import Logo from "@/components/logo";
+import IntegraPsisLogo from "@/components/integrapsis-logo";
 import { 
   Bot, 
   Filter, 
@@ -135,46 +136,55 @@ export default function Products() {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* IntegraCorretora */}
+            {/* IntegraPsis - Sistema para Corretoras */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative h-48 bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+              <div className="relative h-48 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
                 <Shield className="text-white" size={48} />
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
                   <span className="text-white text-sm font-medium">Corretoras</span>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">IntegraCorretora</h3>
+                <div className="flex items-center mb-3">
+                  <IntegraPsisLogo size={30} showText={false} />
+                  <h3 className="text-xl font-bold text-teal-600 ml-2">IntegraPsis</h3>
+                </div>
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   Sistema completo para corretoras de seguros com gestão de leads, propostas e automação WhatsApp.
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="flex items-center text-sm text-gray-600">
-                    <Users size={16} className="mr-2 text-emerald-500" />
+                    <Users size={16} className="mr-2 text-teal-500" />
                     Gestão de Leads
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <File size={16} className="mr-2 text-emerald-500" />
+                    <File size={16} className="mr-2 text-teal-500" />
                     Propostas
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <MessageCircle size={16} className="mr-2 text-emerald-500" />
+                    <MessageCircle size={16} className="mr-2 text-teal-500" />
                     WhatsApp
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <BarChart size={16} className="mr-2 text-emerald-500" />
+                    <BarChart size={16} className="mr-2 text-teal-500" />
                     Analytics
                   </div>
                 </div>
-                <div className="bg-emerald-50 p-3 rounded-lg">
-                  <div className="text-sm text-emerald-800 font-medium">Impacto:</div>
-                  <div className="text-lg font-bold text-emerald-700">+200% conversão</div>
+                <div className="bg-teal-50 p-3 rounded-lg mb-4">
+                  <div className="text-sm text-teal-800 font-medium">Impacto:</div>
+                  <div className="text-lg font-bold text-teal-700">+200% conversão</div>
                 </div>
+                <Button 
+                  onClick={() => window.open('https://integrapsis.com.br/', '_blank')}
+                  className="w-full bg-teal-600 hover:bg-teal-700 text-white"
+                >
+                  Visitar Site IntegraPsis
+                </Button>
               </div>
             </motion.div>
             

@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Logo size={30} showText={false} />
-              <div className="text-2xl font-bold text-teal-400">
-                IntegraPsis
+              <div className="text-2xl font-bold text-gradient">
+                IntegraDev.IA
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
@@ -23,11 +23,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail className="text-blue-400 mr-3" size={20} />
-                <span className="text-gray-300">contato@integrapsis.com.br</span>
+                <span className="text-gray-300">contato@integradev.ia</span>
               </div>
               <div className="flex items-center">
                 <Instagram className="text-pink-400 mr-3" size={20} />
-                <span className="text-gray-300">@integrapsis</span>
+                <span className="text-gray-300">@integradev.ia</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="text-red-400 mr-3" size={20} />
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 IntegraPsis. Todos os direitos reservados.</p>
+          <p>&copy; 2025 IntegraDev.IA. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

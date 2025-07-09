@@ -36,14 +36,6 @@ export default function Home() {
                   Conhecer Produtos
                 </Button>
               </Link>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
-                onClick={() => window.open('https://integrapsis.com.br/', '_blank')}
-              >
-                Site Principal
-              </Button>
               <Link href="/sobre-nos">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg">
                   Sobre Nós
@@ -59,7 +51,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Por que escolher a IntegraPsis?
+              Por que escolher a IntegraDev.IA?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Combinamos expertise em IA com desenvolvimento de sistemas para criar soluções que realmente impactam seu negócio
@@ -207,7 +199,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => {
-                const message = encodeURIComponent("Olá! Gostaria de conhecer mais sobre os produtos da IntegraPsis");
+                const message = encodeURIComponent("Olá! Gostaria de conhecer mais sobre os produtos da IntegraDev.IA");
                 window.open(`https://wa.me/552138282956?text=${message}`, "_blank");
               }}
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
