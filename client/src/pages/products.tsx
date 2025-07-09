@@ -136,17 +136,64 @@ export default function Products() {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* IntegraPsis - Sistema para Corretoras */}
+            {/* IntegraCorretora */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative h-48 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
+              <div className="relative h-48 bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
                 <Shield className="text-white" size={48} />
                 <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
                   <span className="text-white text-sm font-medium">Corretoras</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">IntegraCorretora</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Sistema completo para corretoras de seguros com gestão de leads, propostas e automação WhatsApp.
+                </p>
+                <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users size={16} className="mr-2 text-emerald-500" />
+                    Gestão de Leads
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <File size={16} className="mr-2 text-emerald-500" />
+                    Propostas
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <MessageCircle size={16} className="mr-2 text-emerald-500" />
+                    WhatsApp
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart size={16} className="mr-2 text-emerald-500" />
+                    Analytics
+                  </div>
+                </div>
+                <div className="bg-emerald-50 p-3 rounded-lg">
+                  <div className="text-sm text-emerald-800 font-medium">Impacto:</div>
+                  <div className="text-lg font-bold text-emerald-700">+200% conversão</div>
+                </div>
+              </div>
+            </motion.div>
+            
+            {/* IntegraPsis - Sistema para Clínicas */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="relative h-48 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/attached_assets/capa integrapsi_1752085521224.PNG" 
+                  alt="IntegraPsis" 
+                  className="w-full h-full object-contain bg-white"
+                />
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
+                  <span className="text-teal-600 text-sm font-medium">Clínicas</span>
                 </div>
               </div>
               <div className="p-6">
@@ -155,29 +202,29 @@ export default function Products() {
                   <h3 className="text-xl font-bold text-teal-600 ml-2">IntegraPsis</h3>
                 </div>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  Sistema completo para corretoras de seguros com gestão de leads, propostas e automação WhatsApp.
+                  CRM completo para clínicas de psicologia com agenda inteligente, prontuários e automações.
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="flex items-center text-sm text-gray-600">
-                    <Users size={16} className="mr-2 text-teal-500" />
-                    Gestão de Leads
+                    <Calendar size={16} className="mr-2 text-teal-500" />
+                    Agenda Smart
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <File size={16} className="mr-2 text-teal-500" />
-                    Propostas
+                    <Stethoscope size={16} className="mr-2 text-teal-500" />
+                    Prontuários
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <MessageCircle size={16} className="mr-2 text-teal-500" />
-                    WhatsApp
+                    <Bell size={16} className="mr-2 text-teal-500" />
+                    Lembretes
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <BarChart size={16} className="mr-2 text-teal-500" />
-                    Analytics
+                    <DollarSign size={16} className="mr-2 text-teal-500" />
+                    Financeiro
                   </div>
                 </div>
                 <div className="bg-teal-50 p-3 rounded-lg mb-4">
                   <div className="text-sm text-teal-800 font-medium">Impacto:</div>
-                  <div className="text-lg font-bold text-teal-700">+200% conversão</div>
+                  <div className="text-lg font-bold text-teal-700">-60% tempo admin</div>
                 </div>
                 <Button 
                   onClick={() => window.open('https://integrapsis.com.br/', '_blank')}
@@ -185,49 +232,6 @@ export default function Products() {
                 >
                   Visitar Site IntegraPsis
                 </Button>
-              </div>
-            </motion.div>
-            
-            {/* IntegraPsi */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                <Brain className="text-white" size={48} />
-                <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-white text-sm font-medium">Psicólogos</span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">IntegraPsi</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  CRM completo para clínicas de psicologia com agenda inteligente, prontuários e automações.
-                </p>
-                <div className="grid grid-cols-2 gap-3 mb-4">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Calendar size={16} className="mr-2 text-blue-500" />
-                    Agenda Smart
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Stethoscope size={16} className="mr-2 text-blue-500" />
-                    Prontuários
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Bell size={16} className="mr-2 text-blue-500" />
-                    Lembretes
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <DollarSign size={16} className="mr-2 text-blue-500" />
-                    Financeiro
-                  </div>
-                </div>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <div className="text-sm text-blue-800 font-medium">Impacto:</div>
-                  <div className="text-lg font-bold text-blue-700">-60% tempo admin</div>
-                </div>
               </div>
             </motion.div>
           </div>

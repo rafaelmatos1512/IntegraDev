@@ -42,7 +42,7 @@ export default function IntegraPsisLogo({ size = 40, className = "", showText = 
             IntegraPsis
           </span>
           <span className="text-sm text-gray-600 tracking-wide">
-            SISTEMAS PARA CORRETORAS
+            SISTEMAS PARA CLÍNICAS
           </span>
         </div>
       )}

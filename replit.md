@@ -110,12 +110,14 @@ Changelog:
   - Updated navbar and footer to use new logo
   - Improved text readability with better contrast and backgrounds
   - Updated footer location to Niterói, RJ - Brasil
-- July 08, 2025: IntegraPsis integration for corretoras
-  - Created separate IntegraPsis logo component for broker insurance systems
-  - Added IntegraPsis branding specifically to corretora section in products page
+- July 08, 2025: IntegraPsis integration for clínicas
+  - Created separate IntegraPsis logo component for psychology clinic systems
+  - Added IntegraPsis branding specifically to psychology clinic section in products page
   - Integrated link to https://integrapsis.com.br/ in IntegraPsis product card
+  - Added IntegraPsis brand image to product card header
   - Maintained IntegraDev.IA as main brand with IntegraPsis as specialized division
   - Updated product card with teal color scheme matching IntegraPsis identity
+  - Corrected: IntegraPsis is for psychology clinics, IntegraCorretora is for insurance brokers
 ```
 
 ## User Preferences
