@@ -51,8 +51,8 @@ export default function Logo({ size = 40, className = "", showText = true }: Log
           <span className="text-2xl font-bold text-gradient">
             IntegraDev.ia
           </span>
-          <span className="text-sm text-gray-600 tracking-wide">
-            SISTEMAS E AUTOMAÇÕES
+          <span className="text-sm italic text-gray-600 tracking-wide">
+            AUTOMAÇÕES E DESENVOLVIMENTO DE SISTEMAS  
           </span>
         </div>
       )}
