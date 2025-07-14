@@ -183,10 +183,16 @@ export default function Products() {
                     Analytics
                   </div>
                 </div>
-                <div className="bg-emerald-50 p-3 rounded-lg">
+                <div className="bg-emerald-50 p-3 rounded-lg mb-4">
                   <div className="text-sm text-emerald-800 font-medium">Impacto:</div>
                   <div className="text-lg font-bold text-emerald-700">+200% conversão</div>
                 </div>
+                <Button 
+                  onClick={() => window.open('https://integraoutlier.com.br/', '_blank')}
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                >
+                  Visitar Site IntegraOutlier
+                </Button>
               </div>
             </motion.div>
 
@@ -298,8 +304,8 @@ export default function Products() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => {
-                const message = encodeURIComponent("Olá! Gostaria de conhecer mais sobre os produtos da IntegraDev.IA");
-                window.open(`https://wa.me/5511999999999?text=${message}`, "_blank");
+                const message = encodeURIComponent("Olá! Gostaria de saber sobre os produtos da IntegraDev.IA");
+                window.open(`https://wa.me/552138282956?text=${message}`, "_blank");
               }}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center"
             >
@@ -314,7 +320,7 @@ export default function Products() {
               </svg>
               Falar com Especialista
             </Button>
-            <Link href="/sobre-nos">
+            <Link href="/produtos">
               <Button 
                 variant="outline" 
                 className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transform hover:scale-105 transition-all duration-300 border-white/20"
