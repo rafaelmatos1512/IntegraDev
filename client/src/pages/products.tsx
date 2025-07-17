@@ -93,13 +93,13 @@ export default function Products() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Agente de Filtragem de Leads</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Agente Inteligente de Qualificação de Leads</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  Qualifica automaticamente seus contatos, identificando leads mais promissores através de perguntas estratégicas.
+                  <strong>Automatize a triagem e descubra oportunidades de ouro.</strong> Utiliza perguntas estratégicas para identificar os leads mais promissores, economizando tempo da equipe e acelerando seu funil de vendas.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-lg">
-                  <div className="text-sm text-blue-800 font-medium">Resultado:</div>
-                  <div className="text-lg font-bold text-blue-600">+75% leads qualificados</div>
+                  <div className="text-sm text-blue-800 font-medium">📊 Resultado comprovado:</div>
+                  <div className="text-lg font-bold text-blue-600">+75% de leads qualificados</div>
                 </div>
               </div>
             </motion.div>
@@ -116,13 +116,13 @@ export default function Products() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">RAG de Documentos</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Agente de Vendas com Inteligência de Conteúdo</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  Responde perguntas com base em arquivos da sua empresa, como contratos, manuais e documentos técnicos.
+                  <strong>Transforme seus arquivos em um consultor de vendas 24h.</strong> Responde dúvidas com base nos documentos da empresa (contratos, manuais, apresentações etc.), auxiliando clientes e vendedores em tempo real.
                 </p>
                 <div className="bg-purple-50 p-3 rounded-lg">
-                  <div className="text-sm text-purple-800 font-medium">Resultado:</div>
-                  <div className="text-lg font-bold text-purple-600">-80% tempo de consulta</div>
+                  <div className="text-sm text-purple-800 font-medium">🚀 Resultado comprovado:</div>
+                  <div className="text-lg font-bold text-purple-600">+30% de eficiência nas vendas</div>
                 </div>
               </div>
             </motion.div>
