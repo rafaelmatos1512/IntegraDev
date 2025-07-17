@@ -207,7 +207,7 @@ export default function Products() {
                 <img 
                   src="/attached_assets/capa integrapsi_1752085521224.PNG" 
                   alt="IntegraPsis" 
-                  className="h-16 w-auto object-contain"
+                  className="h-32 w-auto object-contain"
                 />
                 <div className="absolute top-4 left-4 bg-teal-500 rounded-lg px-3 py-1">
                   <span className="text-white text-sm font-medium">Clínicas</span>
