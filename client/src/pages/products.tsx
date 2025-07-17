@@ -205,7 +205,7 @@ export default function Products() {
             >
               <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/attached_assets/capa integrapsi_1752085521224.PNG" 
+                  src="/attached_assets/integrapsis_new_logo.png" 
                   alt="IntegraPsis" 
                   className="h-32 w-auto object-contain"
                 />
