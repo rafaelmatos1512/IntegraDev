@@ -46,17 +46,17 @@ export default function About() {
                 desenvolvimento de software, machine learning e experiência do usuário.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Desde nossa fundação, já ajudamos mais de 100 empresas a implementar soluções de IA que 
+                Desde nossa fundação, já ajudamos mais de 20 empresas a implementar soluções de IA que 
                 transformaram seus processos de atendimento e vendas, gerando resultados mensuráveis e 
                 sustentáveis.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
                   <div className="text-gray-600">Clientes Atendidos</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-purple-600 mb-2">200+</div>
                   <div className="text-gray-600">Agentes IA Criados</div>
                 </div>
               </div>

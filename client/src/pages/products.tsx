@@ -63,7 +63,6 @@ export default function Products() {
           </motion.div>
         </div>
       </div>
-
       {/* AI Agents Section */}
       <AnimatedSection className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,7 +128,6 @@ export default function Products() {
           </div>
         </div>
       </AnimatedSection>
-
       {/* System Development Section */}
       <AnimatedSection className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,9 +203,9 @@ export default function Products() {
             >
               <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/attached_assets/integrapsis_new_logo.png" 
+                  src="/attached_assets/Imagem do WhatsApp de 2025-07-17 à(s) 18.54.46_2f5eac68.jpg" 
                   alt="IntegraPsis" 
-                  className="h-32 w-auto object-contain"
+                  className="h-32 w-auto object-contain ml-[0px] mr-[0px] mt-[0px] mb-[0px]"
                 />
                 <div className="absolute top-4 left-4 bg-teal-500 rounded-lg px-3 py-1">
                   <span className="text-white text-sm font-medium">Clínicas</span>
@@ -254,7 +252,6 @@ export default function Products() {
           </div>
         </div>
       </AnimatedSection>
-
       {/* Quick Benefits */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -291,7 +288,6 @@ export default function Products() {
           </div>
         </div>
       </AnimatedSection>
-
       {/* CTA Section */}
       <AnimatedSection className="py-12 bg-gradient-to-br from-gray-900 to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -321,12 +317,7 @@ export default function Products() {
               Falar com Especialista
             </Button>
             <Link href="/produtos">
-              <Button 
-                variant="outline" 
-                className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transform hover:scale-105 transition-all duration-300 border-white/20"
-              >
-                Conhecer a Empresa
-              </Button>
+              
             </Link>
           </div>
         </div>
