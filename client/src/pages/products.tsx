@@ -203,8 +203,8 @@ export default function Products() {
             >
               <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/attached_assets/Imagem do WhatsApp de 2025-07-17 à(s) 18.54.46_2f5eac68.jpg" 
-                  alt="IntegraPsis" 
+                  src="Imagem do WhatsApp de 2025-07-17 à(s) 18.54.46_2f5eac68.jpg" 
+                  
                   className="h-32 w-auto object-contain ml-[0px] mr-[0px] mt-[0px] mb-[0px]"
                 />
                 <div className="absolute top-4 left-4 bg-teal-500 rounded-lg px-3 py-1">
